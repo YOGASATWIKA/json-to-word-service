@@ -1,6 +1,7 @@
 plugins {
     kotlin("jvm") version "2.0.10"
     kotlin("plugin.serialization") version "1.9.10"
+    application
 }
 
 group = "id.pande"
@@ -18,6 +19,10 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
     testImplementation(kotlin("test"))
+}
+
+application {
+    mainClass.set("kotlin.MainKt") // Sesuaikan path kelas utama
 }
 
 tasks.test {

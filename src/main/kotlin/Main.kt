@@ -8,15 +8,17 @@ import kotlinx.coroutines.*
 import java.nio.file.Paths
 
 fun main()  {
-
 //    val directory = File("./sources/fungsional")
 //
 //    generate(directory)
 
 
+//    PPPK2Compiler().compile("./sources/pkb-teknis-ebook-5.json")
 //    PPPK2Compiler().compile("./sources/fungsional/ADMINISTRATOR KESEHATAN AHLI PERTAMA.json")
 
-    SKBCompiler().compile("./sources/skb.json")
+//    SKBCompiler().compile("./sources/skb.json")
+//    SKBCompiler().compile("./sources/Administrator Database Kependudukan Ahli Pertama.json")
+    SKBCompiler().compile("./sources/Nutrisionis Terampil.json")
 }
 
 fun generate(directory: File) {
